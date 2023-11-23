@@ -7,6 +7,8 @@ dbConnect();
 
 const app = express();
 
+app.use(express.json()); //parsing application/json
+
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
